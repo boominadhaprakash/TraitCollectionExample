@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         //debugPrint("Horizontal:\(nameOfSizeClass(traitCollection.horizontalSizeClass))")
         //debugPrint("Vertical:\(nameOfSizeClass(traitCollection.verticalSizeClass))")
         
-        if traitCollection.horizontalSizeClass == .compact {
+        if traitCollection.horizontalSizeClass == .compact && traitCollection.verticalSizeClass == .regular {
             button1BottomConstraint.constant = 20
         } else {
             button1BottomConstraint.constant = (screenSize.height/2)-(button1.frame.height/2)
